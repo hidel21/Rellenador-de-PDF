@@ -22,29 +22,7 @@ Esta herramienta fue desarrollada en Python y permite automatizar el proceso de 
 
 ### Instrucciones
 
-1. **Dockerfile**:
-
-   Si aún no tienes un Dockerfile, aquí tienes una plantilla:
-
-   ```plaintext
-   # Usar una imagen base de Python (en este caso, Python 3.9)
-   FROM python:3.9
-
-   # Establecer un directorio de trabajo
-   WORKDIR /usr/src/app
-
-   # Copiar requirements.txt y luego instalar
-   COPY requirements.txt .
-   RUN pip install --no-cache-dir -r requirements.txt
-
-   # Copiar todos los archivos
-   COPY . .
-
-   # Comando por defecto para el contenedor
-   CMD ["python", "./script-reader.py"]
-
-   EXPOSE 5000
-   ```
+1. **Tener el Dockerfile del repositorio**:
 
 2. **Construir la imagen**:
 
